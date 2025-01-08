@@ -1,4 +1,5 @@
 # Import necessary libraries
+import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -43,13 +44,16 @@ mse = mean_squared_error(y_test, y_pred)
 rmse = np.sqrt(mse)
 r2 = r2_score(y_test, y_pred)
 
-print(f'Mean Squared Error: {mse}')
-print(f'Root Mean Squared Error: {rmse}')
-print(f'R^2 Score: {r2}')
+# Display metrics
+st.subheader("Model Evaluation")
+st.write(f"Mean Squared Error: {mse}")
+st.write(f"Root Mean Squared Error: {rmse}")
+st.write(f"R² Score: {r2}")
 
 # Visualize the actual vs predicted prices
+st.subheader("Actual vs Predicted Prices")
 plt.scatter(y_test, y_pred)
 plt.xlabel('Actual Prices')
 plt.ylabel('Predicted Prices')
 plt.title('Actual vs Predicted Prices')
-plt.show()
+st.pyplot(plt)
