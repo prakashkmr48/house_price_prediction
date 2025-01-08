@@ -11,18 +11,23 @@ Ensure you have the following Python libraries installed:
 - `seaborn`
 - `matplotlib`
 - `scikit-learn`
+- `streamlit`
 
 You can install them using:
 ```bash
-pip install pandas numpy seaborn matplotlib scikit-learn
+pip install pandas numpy seaborn matplotlib scikit-learn streamlit
 ```
 
-## How to Run the Code
+## How to Run the Code on Streamlit
 
 1. Clone or download this repository to your local machine.
-2. Open the Python script in your preferred IDE or editor.
+2. Create a new Python file, for example, `app.py`, and copy the provided code into it.
 3. Ensure the necessary libraries are installed.
-4. Run the script to train the Linear Regression model and make predictions on house prices.
+4. Run the Streamlit app using the following command:
+```bash
+streamlit run app.py
+```
+5. Open the provided local URL (e.g., `http://localhost:8501`) in your browser to interact with the app.
 
 ## Code Structure
 
@@ -44,10 +49,16 @@ The model is evaluated using metrics such as Mean Squared Error (MSE), Root Mean
 ### 6. Visualization
 A scatter plot is generated to compare actual vs predicted house prices.
 
+### 7. Streamlit Integration
+The code includes an interactive Streamlit app that:
+- Allows users to upload a custom dataset.
+- Displays data statistics and visualizations.
+- Trains a Linear Regression model and displays evaluation metrics.
+
 ## Expected Output
 
 - Metrics like MSE, RMSE, and R² score.
-- A scatter plot visualizing the actual vs predicted house prices.
+- Interactive visualizations and results on the Streamlit app.
 
 ## Customization
 
@@ -57,7 +68,7 @@ A scatter plot is generated to compare actual vs predicted house prices.
 
 ## Example Command to Run
 ```bash
-python house_price_prediction.py
+streamlit run app.py
 ```
 
 ## License
