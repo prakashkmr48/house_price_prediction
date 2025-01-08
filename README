@@ -1,0 +1,69 @@
+# Predicting House Prices Using Regression Models
+
+This project demonstrates how to predict house prices using regression models, specifically Linear Regression, implemented in Python. The dataset used is the Boston Housing dataset from the `sklearn` library, but you can replace it with your own dataset.
+
+## Prerequisites
+
+Ensure you have the following Python libraries installed:
+
+- `pandas`
+- `numpy`
+- `seaborn`
+- `matplotlib`
+- `scikit-learn`
+
+You can install them using:
+```bash
+pip install pandas numpy seaborn matplotlib scikit-learn
+```
+
+## How to Run the Code
+
+1. Clone or download this repository to your local machine.
+2. Open the Python script in your preferred IDE or editor.
+3. Ensure the necessary libraries are installed.
+4. Run the script to train the Linear Regression model and make predictions on house prices.
+
+## Code Structure
+
+### 1. Load Dataset
+The code uses the Boston Housing dataset from `sklearn`. Replace it with your dataset if needed.
+
+### 2. Data Exploration
+Data visualization is performed using Seaborn to understand the relationships between variables.
+
+### 3. Data Preparation
+The dataset is split into features (X) and target (y), and then further divided into training and testing sets.
+
+### 4. Model Training
+A Linear Regression model is trained using the training data.
+
+### 5. Model Evaluation
+The model is evaluated using metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R² score.
+
+### 6. Visualization
+A scatter plot is generated to compare actual vs predicted house prices.
+
+## Expected Output
+
+- Metrics like MSE, RMSE, and R² score.
+- A scatter plot visualizing the actual vs predicted house prices.
+
+## Customization
+
+- Replace the Boston Housing dataset with your own dataset.
+- Experiment with other regression models like `Ridge`, `Lasso`, or `RandomForestRegressor`.
+- Add more preprocessing steps (e.g., handling missing values, scaling, etc.) if using a different dataset.
+
+## Example Command to Run
+```bash
+python house_price_prediction.py
+```
+
+## License
+
+This project is open-source and available under the MIT License. Feel free to modify and share it.
+
+---
+
+Happy coding!
